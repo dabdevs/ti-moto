@@ -25,15 +25,6 @@ class ReadEventTest extends TestCase
             'location' => 'Test read location 1'
         ];
 
-       /*  Event::create([
-            'name' => 'Test read event 2',
-            'description' => 'Test read event description 2',
-            'image' => UploadedFile::fake()->image('test-image.jpg'),
-            'date' => '2025/06/04',
-            'time' => '10:00:00',
-            'location' => 'Test read location 2'
-        ]); */
-
         // Act
         $response = $this->getJson('/api/events', $eventData);
 
